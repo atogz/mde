@@ -19,11 +19,11 @@ export default {
 
 <style>
 #app {
-    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 </style>
 
 <style src="./assets/css/tailwind.css"></style>
-<link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
