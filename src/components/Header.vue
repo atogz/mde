@@ -36,15 +36,30 @@
           </div>
 
           <div class="w-full lg:hidden flex justify-end">
-              <font-awesome-icon :icon="['fa', 'bars']" class="text-white md:text-2xl" />
+              <font-awesome-icon :icon="['fa', 'bars']" class="text-white md:text-2xl" @click="showMobileMenu = !showMobileMenu"/>
           </div>
       </div>
+    <transition name="fadeHeight">
+        <div class="flex flex-col bg-mainColor opacity-75 pt-3 pb-3 text-white text-lg uppercase" v-if="showMobileMenu">
+            <div class="pl-6 pr-6 p-3">Главная</div>
+            <div class="pl-6 pr-6 p-3">О Компании</div>
+            <div class="pl-6 pr-6 p-3">Проекты</div>
+            <div class="pl-6 pr-6 p-3">Портфолио</div>
+            <div class="pl-6 pr-6 p-3">Партнеры</div>
+            <div class="pl-6 pr-6 p-3">Контакты</div>
+        </div>
+    </transition>
   </header>
 </template>
 
 <script>
 export default {
   name: 'Header',
+  data() {
+    return {
+      showMobileMenu: false
+    }
+  }
 }
 </script>
 

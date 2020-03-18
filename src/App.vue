@@ -23,6 +23,17 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.fadeHeight-enter-active,
+.fadeHeight-leave-active {
+    transition: all 0.2s;
+    max-height: 360px;
+}
+.fadeHeight-enter,
+.fadeHeight-leave-to
+{
+    opacity: 0;
+    max-height: 0;
+}
 </style>
 
 <style src="./assets/css/tailwind.css"></style>
