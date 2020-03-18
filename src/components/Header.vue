@@ -23,10 +23,10 @@
           </div>
       </div>
       <div class="pl-6 pr-6 p-3 navbar bg-mainColor w-full flex items-center">
-          <div class="w-2/6">
+          <div class="w-full lg:w-3/6">
               <img src="../assets/img/logo.png"/>
           </div>
-          <div class="w-4/6 hidden justify-between font-bold text-white uppercase lg:flex">
+          <div class="w-full hidden justify-between font-bold text-white uppercase lg:flex">
               <div>Главная</div>
               <div>О Компании</div>
               <div>Проекты</div>
@@ -36,7 +36,7 @@
           </div>
 
           <div class="w-full lg:hidden flex justify-end">
-              <font-awesome-icon :icon="['fa', 'bars']" class="text-white md:text-2xl" @click="showMobileMenu = !showMobileMenu"/>
+              <font-awesome-icon :icon="['fa', 'bars']" class="text-white text-xl md:text-2xl" @click="showMobileMenu = !showMobileMenu"/>
           </div>
       </div>
     <transition name="fadeHeight">
@@ -66,5 +66,8 @@ export default {
 <style scoped>
     .topbar {
         color: #f5f5f5;
+    }
+    .navbar {
+        min-height: 83px;
     }
 </style>
