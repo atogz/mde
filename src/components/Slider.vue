@@ -89,6 +89,17 @@
         console.log(this.slideIsHovered);
         if(!this.slideIsHovered) this.next();
       }, 7000);
+      document.onkeydown = (e) => {
+        switch (e.keyCode) {
+          case 37:
+            this.previous();
+            break;
+          case 39:
+            this.next();
+            break;
+        }
+      };
+
     }
   }
 </script>
