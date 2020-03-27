@@ -81,5 +81,6 @@ export default {
     }
     .navbar {
         min-height: 83px;
+        color: #fff !important;
     }
 </style>
