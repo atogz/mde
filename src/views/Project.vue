@@ -1,5 +1,7 @@
 <template>
-    <div class="w-full mt-6"> Проект №{{ projectId }}</div>
+    <div class="w-full mt-6 pl-6 pr-6">
+        <h3>Проект №{{ projectId }}</h3>
+    </div>
 </template>
 
 <script>
