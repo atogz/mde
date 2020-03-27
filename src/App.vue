@@ -1,17 +1,23 @@
 <template>
   <div id="app">
     <Header/>
+      <div class="hidden lg:block">
+          <Slider/>
+      </div>
+
   </div>
 </template>
 
 <script>
 
 import Header from './components/Header.vue'
+import Slider from "./components/Slider.vue";
 
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
+    Slider
   }
 }
 </script>
@@ -33,6 +39,21 @@ export default {
 {
     opacity: 0;
     max-height: 0;
+}
+
+/*vue transitions*/
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+.fade-leave-active {
+    position: absolute;
+}
+
+.animated {
+    transition: all 0.5s;
+    /*display: flex;*/
+    width: 100%;
 }
 </style>
 
