@@ -27,12 +27,20 @@
           <div class="pl-6 pr-6 p-3 navbar bg-mainColor w-full flex items-center">
               <div class="container mx-auto flex flex-wrap items-center justify-between">
                   <div class="w-auto">
-                      <img src="../assets/img/logo.png"/>
+                      <router-link to="/">
+                          <img src="../assets/img/logo.png"/>
+                      </router-link>
                   </div>
                   <div class="w-full hidden justify-between font-bold text-white uppercase lg:w-4/6 lg:flex">
-                      <div>Главная</div>
-                      <div>О Компании</div>
-                      <div>Проекты</div>
+                      <router-link to="/">
+                          <div>Главная</div>
+                      </router-link>
+                      <router-link to="/About">
+                          <div>О Компании</div>
+                      </router-link>
+                      <router-link to="/Projects">
+                        <div>Проекты</div>
+                      </router-link>
                       <div>Портфолио</div>
                       <div>Партнеры</div>
                       <div>Контакты</div>

@@ -8,7 +8,9 @@
                             <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
                             </p>
-                            <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
+                            <router-link to="/projects/1">
+                                <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
+                            </router-link>
                         </div>
                 </div>
                 <div class="w-full animated slider__item slider__item--2 flex items-center justify-center" v-if="activeSlide === 2" :key="2">
@@ -17,7 +19,9 @@
                         <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
                         </p>
-                        <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
+                        <router-link to="/projects/2">
+                            <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
+                        </router-link>
                     </div>
                 </div>
                 <div class="w-full animated slider__item slider__item--3 flex items-center justify-center" v-if="activeSlide === 3" :key="3">
@@ -26,7 +30,9 @@
                         <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
                         </p>
-                        <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
+                        <router-link to="/projects/3">
+                            <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
+                        </router-link>
                     </div>
                 </div>
                 <div class="w-full animated slider__item slider__item--4 flex items-center justify-center" v-if="activeSlide === 4" :key="4">
@@ -35,7 +41,10 @@
                         <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
                         </p>
-                        <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
+                        <router-link to="/projects/4">
+                            <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
+                        </router-link>
+
                     </div>
                 </div>
             </transition-group>
@@ -114,5 +123,20 @@
     .slider__item--4 {
         background-image: url("../assets/img/slider_4.jpg");
         background-size: cover;
+    }
+
+    /*vue transitions*/
+    .fade-enter,
+    .fade-leave-active {
+        opacity: 0;
+    }
+    .fade-leave-active {
+        position: absolute;
+    }
+
+    .animated {
+        transition: all 0.5s;
+        /*display: flex;*/
+        width: 100%;
     }
 </style>
