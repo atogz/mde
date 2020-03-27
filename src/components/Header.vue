@@ -32,12 +32,12 @@
                       </router-link>
                   </div>
                   <div class="w-full hidden justify-between font-bold text-white uppercase lg:w-4/6 lg:flex">
-                      <router-link to="/" class="text-white">Главная</router-link>
-                      <router-link to="/about" class="text-white">О компании</router-link>
-                      <router-link to="/projects" class="text-white">Проекты </router-link>
-                      <router-link to="/gallery" class="text-white">Портфолио </router-link>
-                      <router-link to="/partners" class="text-white">Партнеры </router-link>
-                      <router-link to="/contacts" class="text-white">Контакты </router-link>
+                      <router-link to="/" class="text-white no-underline">Главная</router-link>
+                      <router-link to="/about" class="text-white no-underline">О компании</router-link>
+                      <router-link to="/projects" class="text-white no-underline">Проекты </router-link>
+                      <router-link to="/gallery" class="text-white no-underline">Портфолио </router-link>
+                      <router-link to="/partners" class="text-white no-underline">Партнеры </router-link>
+                      <router-link to="/contacts" class="text-white no-underline">Контакты </router-link>
                   </div>
 
                   <div class="w-auto lg:hidden flex justify-end">
