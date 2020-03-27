@@ -3,7 +3,8 @@ module.exports = {
     extend: {
       colors: {
         mainColor: '#206190',
-        accentColor: '#ffa60a'
+        accentColor: '#ffa60a',
+        opacityColorBlack: 'rgba(0,0,0,0.5)'
       }
     },
   },
