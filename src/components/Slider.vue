@@ -3,7 +3,7 @@
         <div class="w-full">
             <transition-group name="fade">
                 <div class="w-full animated slider__item slider__item--1 flex items-center justify-center" v-if="activeSlide === 1" :key="1">
-                        <div class="w-1/3 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor  text-center">
+                        <div class="w-2/5 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor text-center">
                             <h3 class="text-4xl w-full font-bold">Проект 1</h3>
                             <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
@@ -12,7 +12,7 @@
                         </div>
                 </div>
                 <div class="w-full animated slider__item slider__item--2 flex items-center justify-center" v-if="activeSlide === 2" :key="2">
-                    <div class="w-1/3 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor  text-center">
+                    <div class="w-2/5 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor text-center">
                         <h3 class="text-4xl w-full font-bold">Проект 2</h3>
                         <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div class="w-full animated slider__item slider__item--3 flex items-center justify-center" v-if="activeSlide === 3" :key="3">
-                    <div class="w-1/3 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor text-center">
+                    <div class="w-2/5 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor text-center">
                         <h3 class="text-4xl w-full font-bold">Проект 3</h3>
                         <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="w-full animated slider__item slider__item--4 flex items-center justify-center" v-if="activeSlide === 4" :key="4">
-                    <div class="w-1/3 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor text-center">
+                    <div class="w-2/5 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor text-center">
                         <h3 class="text-4xl w-full font-bold">Проект 4</h3>
                         <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
