@@ -44,7 +44,7 @@
                 <div class="previous px-8 py-6 rounded-full bg-accentColor cursor-pointer" @click="previous()">
                     <font-awesome-icon :icon="['fa', 'angle-left']" class="text-white text-xl"/>
                 </div>
-                <div class="previous px-8 py-6 rounded-full bg-accentColor cursor-pointer" @click="previous()">
+                <div class="previous px-8 py-6 rounded-full bg-accentColor cursor-pointer" @click="next()">
                     <font-awesome-icon :icon="['fa', 'angle-right']" class="text-white text-xl"/>
                 </div>
             </div>
