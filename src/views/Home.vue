@@ -25,10 +25,10 @@
                     Proin cursus sem at rhoncus convallis.
                 </p>
                 <div class="w-full flex items-center mt-12 xxl:w-2/3">
-                    <router-link to="/about" class="p-3 w-1/3 bg-mainColor text-white text-center rounded-full font-bold">
+                    <router-link to="/about" class="p-3 w-1/3 bg-mainColor text-white no-underline text-center rounded-full font-bold">
                         О Компании
                     </router-link>
-                    <router-link to="/projects" class="p-3 ml-2 w-1/3 bg-accentColor text-white text-center rounded-full font-bold">
+                    <router-link to="/projects" class="p-3 ml-2 w-1/3 bg-accentColor text-white no-underline text-center rounded-full font-bold">
                         Проекты
                     </router-link>
                 </div>
@@ -95,7 +95,7 @@
 
                     </div>
                     <div class="w-full flex justify-center home-gallery-link">
-                        <router-link to="/gallery" class="px-8 py-4  bg-mainColor text-white font-bold flex justify-between items-center rounded">
+                        <router-link to="/gallery" class="px-8 py-4  bg-mainColor text-white no-underline font-bold flex justify-between items-center rounded">
                             <span>Портфолио</span>
                             <font-awesome-icon :icon="['fa', 'angle-right']" class="text-white ml-2 text-xl"/>
                         </router-link>
@@ -114,7 +114,7 @@
 
                     </div>
                     <div class="w-full flex justify-center home-gallery-link">
-                        <router-link to="/gallery" class="px-8 py-4 bg-accentColor text-white font-bold flex justify-between items-center rounded">
+                        <router-link to="/gallery" class="px-8 py-4 bg-accentColor text-white no-underline font-bold flex justify-between items-center rounded">
                             <span>Портфолио</span>
                         </router-link>
                     </div>
@@ -132,7 +132,7 @@
 
                     </div>
                     <div class="w-full flex justify-center home-gallery-link">
-                        <router-link to="/gallery" class="px-8 py-4 bg-accentColor text-white font-bold flex justify-between rounded items-center">
+                        <router-link to="/gallery" class="px-8 py-4 bg-accentColor text-white no-underline font-bold flex justify-between rounded items-center">
                             <span>Портфолио</span>
                         </router-link>
                     </div>
