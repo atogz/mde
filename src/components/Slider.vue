@@ -49,7 +49,7 @@
                 </div>
             </transition-group>
 
-            <div class="w-full flex justify-between slider__nav-buttons-container pl-6 pr-6">
+            <div class="w-full flex justify-between slider__nav-buttons-container pl-6 pr-6 xxl:pl-32 xxl:pr-32">
                 <div class="previous px-8 py-6 rounded-full bg-accentColor cursor-pointer" @click="previous()">
                     <font-awesome-icon :icon="['fa', 'angle-left']" class="text-white text-xl"/>
                 </div>

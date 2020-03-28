@@ -1,6 +1,6 @@
 <template>
   <header class="w-full">
-      <div class="pl-6 pr-6 p-3 topbar bg-accentColor items-center hidden lg:flex">
+      <div class="pl-6 pr-6 p-3 topbar bg-accentColor items-center hidden lg:flex xxl:pl-32 xxl:pr-32">
           <div class="container mx-auto">
               <div class="flex w-full flex-wrap">
                   <div class="w-full flex lg:w-1/2">
@@ -24,7 +24,7 @@
               </div>
           </div>
       </div>
-          <div class="pl-6 pr-6 p-3 navbar bg-mainColor w-full flex items-center">
+          <div class="pl-6 pr-6 p-3 navbar bg-mainColor w-full flex items-center xxl:pl-32 xxl:pr-32">
               <div class="container mx-auto flex flex-wrap items-center justify-between">
                   <div class="w-auto">
                       <router-link to="/">
