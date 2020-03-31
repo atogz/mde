@@ -32,6 +32,19 @@
         /* .component-fade-leave-active below version 2.1.8 */ {
         opacity: 0;
     }
+
+    .list-fade-enter-active, .list-fade-leave-active {
+        transition: opacity .3s ease;
+    }
+
+    .list-fade-enter-active {
+        transition-delay: .3s;
+    }
+
+    .list-fade-enter, .list-fade-leave-to
+        /* .component-fade-leave-active below version 2.1.8 */ {
+        opacity: 0;
+    }
 </style>
 <script>
   import Header from "./components/Header.vue";

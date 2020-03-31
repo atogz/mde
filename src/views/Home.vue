@@ -232,16 +232,27 @@
             </div>
         </div>
         <!-- End Featured Project -->
+
+        <!-- Projects Grid -->
+        <div class="w-1/2 m-auto text-center text-mainColor mt-12">
+            <h3 class="text-3xl font-bold">Последние проекты</h3>
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <ProjectsGrid :amount="6" class="mt-12 pb-12"/>
+        
+        <!-- End Projects Grid -->
     </main>
 </template>
 
 <script>
 import Slider from "@/components/Slider.vue";
+import ProjectsGrid from "@/components/ProjectsGrid.vue";
 
 export default {
   name: 'Home',
   components: {
     Slider,
+    ProjectsGrid
   }
 }
 </script>
