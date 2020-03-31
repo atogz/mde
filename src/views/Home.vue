@@ -239,7 +239,7 @@
             <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
         <ProjectsGrid :amount="6" class="mt-12 pb-12"/>
-        
+
         <!-- End Projects Grid -->
     </main>
 </template>

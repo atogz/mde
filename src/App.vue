@@ -45,6 +45,18 @@
         /* .component-fade-leave-active below version 2.1.8 */ {
         opacity: 0;
     }
+
+    .list-fast-item {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    .list-fast-enter-active, .list-fast-leave-active {
+        transition: all 0.5s;
+    }
+    .list-fast-enter, .list-fast-leave-to /* .list-leave-active below version 2.1.8 */ {
+        opacity: 0;
+        transform: translateY(30px);
+    }
 </style>
 <script>
   import Header from "./components/Header.vue";
