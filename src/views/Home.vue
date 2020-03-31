@@ -149,8 +149,8 @@
                 <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
             <div class="w-full mt-8 flex justify-between">
-                <div class="w-1/4 border-2 border-gray-200 flex flex-wrap relative">
-                    <div class="w-full text-6xl text-gray-600 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">01</div>
+                <div class="w-1/4 border-2 border-gray-200 border-r-0 flex flex-wrap relative">
+                    <div class="w-full text-6xl text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">01</div>
                     <div class="w-full flex pl-3 pr-3">
                         <div class="w-1/4 mt-8">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-1.png"/>
@@ -164,8 +164,8 @@
                     </div>
                 </div>
 
-                <div class="w-1/4 border-2 border-gray-200 flex flex-wrap relative">
-                    <div class="w-full text-6xl text-gray-600 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">02</div>
+                <div class="w-1/4 border-2 border-r-0 border-gray-200 flex flex-wrap relative">
+                    <div class="w-full text-6xl text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">02</div>
                     <div class="w-full flex pl-3 pr-3">
                         <div class="w-1/4 mt-8">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-2.png"/>
@@ -179,8 +179,8 @@
                     </div>
                 </div>
 
-                <div class="w-1/4 border-2 border-gray-200 flex flex-wrap relative">
-                    <div class="w-full text-6xl text-gray-600 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">03</div>
+                <div class="w-1/4 border-2 border-gray-200 border-r-0 flex flex-wrap relative">
+                    <div class="w-full text-6xl text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">03</div>
                     <div class="w-full flex pl-3 pr-3">
                         <div class="w-1/4 mt-8">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-3.png"/>
@@ -194,8 +194,8 @@
                     </div>
                 </div>
 
-                <div class="w-1/4 border-2 border-gray-200 flex flex-wrap relative">
-                    <div class="w-full text-6xl text-gray-600 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">04</div>
+                <div class="w-1/4 border-2 border-gray-200 border-r-0 flex flex-wrap relative">
+                    <div class="w-full text-6xl text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">04</div>
                     <div class="w-full flex pl-3 pr-3">
                         <div class="w-1/4 mt-8">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-4.png"/>
@@ -211,16 +211,48 @@
             </div>
         </div>
         <!-- End How We Work -->
+
+        <!-- Featured Project -->
+        <div class="w-full bg-gray-200 flex">
+            <div class="w-3/5 flex justify-center">
+                <img src="../assets/img/home_featured.jpg">
+            </div>
+            <div class="w-2/5 flex flex-col items-center justify-center">
+                <h4 class="text-gray-600">Наш проект</h4>
+                <p class="text-mainColor text-3xl">
+                    Название проекта
+                </p>
+                <p class="text-gray-500 font-normal mt-4 pl-6 pr-6 text-center">Vivamus ac ultrices diam, vitae
+                    accumsan tellus.
+                    Integer sollicitudin vulputate lacus, congue vulputate nisl eleifend in.</p>
+                <router-link to="/projects/1" class="px-8 py-4 mt-6 bg-gray-200 border-2 border-accentColor text-accentColor no-underline font-bold flex justify-between items-center">
+                    <span>Подробнее</span>
+                    <font-awesome-icon :icon="['fa', 'angle-right']" class="text-accentColor ml-2 text-xl"/>
+                </router-link>
+            </div>
+        </div>
+        <!-- End Featured Project -->
+
+        <!-- Projects Grid -->
+        <div class="w-1/2 m-auto text-center text-mainColor mt-12">
+            <h3 class="text-3xl font-bold">Последние проекты</h3>
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <ProjectsGrid :amount="6" class="mt-12 pb-12"/>
+
+        <!-- End Projects Grid -->
     </main>
 </template>
 
 <script>
 import Slider from "@/components/Slider.vue";
+import ProjectsGrid from "@/components/ProjectsGrid.vue";
 
 export default {
   name: 'Home',
   components: {
     Slider,
+    ProjectsGrid
   }
 }
 </script>
