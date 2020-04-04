@@ -239,20 +239,24 @@
             <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
         <ProjectsGrid :amount="6" class="mt-12 pb-12"/>
-
         <!-- End Projects Grid -->
+        <!-- Contact Form -->
+        <ContactForm />
+        <!-- End Contact Form -->
     </main>
 </template>
 
 <script>
 import Slider from "@/components/Slider.vue";
 import ProjectsGrid from "@/components/ProjectsGrid.vue";
+import ContactForm from "@/components/ContactForm.vue";
 
 export default {
   name: 'Home',
   components: {
     Slider,
-    ProjectsGrid
+    ProjectsGrid,
+    ContactForm
   }
 }
 </script>
