@@ -1,12 +1,13 @@
 <template>
     <div class="main">
-        <div class="w-2/3 flex justify-between mx-auto xxl:w-2/4">
-            <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'all'}" @click="filterProjects('all')">Все</div>
-            <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'construction'}" @click="filterProjects('construction', 'construction')">Строительство</div>
-            <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'design'}" @click="filterProjects('design', 'design')">Дизайн</div>
-            <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'interiors'}" @click="filterProjects('interiors', 'interiors')">Интерьеры</div>
-            <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'planning'}" @click="filterProjects('planning', 'planning')">Проектирование</div>
-        </div>
+            <div class="w-2/3 flex justify-between mx-auto xxl:w-2/4">
+                <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'all'}" @click="filterProjects('all')">Все</div>
+                <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'construction'}" @click="filterProjects('construction', 'construction')">Строительство</div>
+                <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'design'}" @click="filterProjects('design', 'design')">Дизайн</div>
+                <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'interiors'}" @click="filterProjects('interiors', 'interiors')">Интерьеры</div>
+                <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'planning'}" @click="filterProjects('planning', 'planning')">Проектирование</div>
+            </div>
+
         <div class="w-full mt-8 pl-6 pr-6">
             <transition-group name="list-fade" class="grid gap-3 grid-cols-3">
                 <div class="flex border border-gray-300" v-for="project in filteredProjects.slice(0, amount)" :key="project.id" @mouseenter="showProjectData = project.id" @mouseleave="showProjectData = null">
