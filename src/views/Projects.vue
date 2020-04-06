@@ -13,6 +13,14 @@
     name: "Projects",
     components: {
       ProjectsGrid
+    },
+    data() {
+      return {
+
+      }
+    },
+    mounted() {
+      window.scrollTo(0, 0)
     }
   }
 </script>
