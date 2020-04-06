@@ -8,6 +8,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faHeadphonesAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import router from './router'
 
@@ -18,6 +19,7 @@ library.add(faBars)
 library.add(faAngleLeft)
 library.add(faAngleRight)
 library.add(faLink)
+library.add(faHeadphonesAlt)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
