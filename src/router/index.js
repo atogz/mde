@@ -24,7 +24,8 @@ const routes = [
   {
     path: '/projects/:id',
     name: 'Project',
-    component: Project
+    component: Project,
+    props: true
   },
   {
     path: '/gallery/',

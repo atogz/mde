@@ -14,7 +14,7 @@
         <div class="w-full mt-8 pl-6 pr-6">
             <transition-group name="list-fade" class="grid gap-3 grid-cols-3">
                 <div class="flex border border-gray-300" v-for="project in filteredProjects.slice(0, amount)" :key="project.id" @mouseenter="showProjectData = project.id" @mouseleave="showProjectData = null">
-                    <router-link :to="'/projects/' + project.id" class="relative flex">
+                    <router-link :to="{ name: 'Project',  params: { id: project.id, project: project } }" class="relative flex">
                     <img class="project-image cursor-pointer" :src="project.imageLink" :class="{'project-data--hovered': showProjectData === project.id}"/>
                     <transition name="list-fast" mode="out-in">
                             <div class="project-data w-full absolute left-0" v-if="showProjectData === project.id">
