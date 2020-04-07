@@ -225,7 +225,7 @@
                 <p class="text-gray-500 font-normal mt-4 pl-6 pr-6 text-center">Vivamus ac ultrices diam, vitae
                     accumsan tellus.
                     Integer sollicitudin vulputate lacus, congue vulputate nisl eleifend in.</p>
-                <router-link to="/projects/1" class="px-8 py-4 mt-6 bg-gray-200 border-2 border-accentColor text-accentColor no-underline font-bold flex justify-between items-center">
+                <router-link :to="{ name: 'Project',  params: { id: 3, project: { 'id': 3, 'name': 'Проект 3', 'category': 'construction', 'imageLink': '/img/construction_3.e4679518.jpg' } } }" class="px-8 py-4 mt-6 bg-gray-200 border-2 border-accentColor text-accentColor no-underline font-bold flex justify-between items-center">
                     <span>Подробнее</span>
                     <font-awesome-icon :icon="['fa', 'angle-right']" class="text-accentColor ml-2 text-xl"/>
                 </router-link>
