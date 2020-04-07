@@ -86,7 +86,6 @@
     },
     created() {
       setInterval( () => {
-        console.log(this.slideIsHovered);
         if(!this.slideIsHovered) this.next();
       }, 7000);
       document.onkeydown = (e) => {
