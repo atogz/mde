@@ -33,12 +33,17 @@
             </transition-group>
         </div>
 
-        <div class="w-full mt-8 pl-6 pr-6 flex justify-center" v-if="amount < filteredProjects.length">
-            <div class="px-8 py-4 bg-accentColor cursor-pointer text-white font-bold flex justify-between items-center" v-if="showMoreProjectsButton" @click="showMoreProjects()">
-                <span>Показать больше</span>
-                <font-awesome-icon :icon="['fa', 'angle-right']" class="text-white ml-2 text-xl"/>
+
+            <div class="w-full mt-8 pl-6 pr-6 flex justify-center" v-if="amount < filteredProjects.length">
+                <transition name="component-fade">
+                    <div class="px-8 py-4 bg-accentColor cursor-pointer text-white font-bold flex justify-between items-center" v-if="showMoreProjectsButton" @click="showMoreProjects()">
+                        <span>Показать больше</span>
+                        <font-awesome-icon :icon="['fa', 'angle-right']" class="text-white ml-2 text-xl"/>
+                    </div>
+                </transition>
             </div>
-        </div>
+
+
 
     </div>
 </template>
