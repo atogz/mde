@@ -4,6 +4,7 @@
       <transition name="component-fade" mode="out-in">
           <router-view/>
       </transition>
+      <Footer/>
   </div>
 </template>
 
@@ -81,9 +82,11 @@
 </style>
 <script>
   import Header from "./components/Header.vue";
+  import Footer from "./components/Footer.vue";
   export default {
     components: {
-      Header
+      Header,
+      Footer
     }
   }
 </script>
