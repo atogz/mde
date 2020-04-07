@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <transition name="list-fade">
+        <transition name="slide-fade">
             <div class="w-2/3 flex justify-between mx-auto xxl:w-2/4" v-if="loaded">
                 <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'all'}" @click="filterProjects('all')">Все</div>
                 <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'construction'}" @click="filterProjects('construction', 'construction')">Строительство</div>
