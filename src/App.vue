@@ -13,6 +13,14 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+
+    button, a {
+        outline: none !important;
+    }
+
+
+    <!-- transitons -->
+
     .fadeHeight-enter-active,
     .fadeHeight-leave-active {
         transition: all 0.2s;
