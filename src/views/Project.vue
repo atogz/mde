@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full mt-6 pl-6 pr-6">
+    <div class="w-full mt-6 pl-6 pr-6 xxl:pl-32 xxl:pr-32">
         <h3 class="text-3xl pb-6">Проект №{{ projectId }}</h3>
         <img :src="project.imageLink" />
     </div>
