@@ -162,7 +162,7 @@
         this.amount = this.amount + 3;
         setTimeout( () => {
           this.showMoreProjectsButton = true;
-        }, 1000)
+        }, 500)
       }
     },
     mounted() {
