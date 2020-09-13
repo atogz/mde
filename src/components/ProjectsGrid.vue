@@ -12,7 +12,7 @@
 
 
         <div class="w-full mt-8 pl-6 pr-6">
-            <transition-group name="list-fade" class="grid gap-3 grid-cols-3">
+            <transition-group name="list-fade" class="grid gap-3 grid-cols-3" v-if="filteredProjects.length">
                 <div class="flex border border-gray-300" v-for="project in filteredProjects.slice(0, amount)" :key="project.id" @mouseenter="showProjectData = project.id" @mouseleave="showProjectData = null">
                     <router-link :to="{ name: 'Project',  params: { id: project.id, project: project } }" class="relative flex">
                     <img class="project-image cursor-pointer" :src="project.mainImage" :class="{'project-data--hovered': showProjectData === project.id}"/>
@@ -31,6 +31,7 @@
                     </router-link>
                 </div>
             </transition-group>
+            <div class="w-full text-center" v-else>{{ errorMessage }}</div>
         </div>
 
 
@@ -61,14 +62,21 @@
         projects: [],
         filteredProjects: [],
         showProjectData: null,
-        showMoreProjectsButton: true
+        showMoreProjectsButton: true,
+        errorMessage: '',
       }
     },
     methods: {
       filterProjects(activeCategory, category) {
         this.activeProjectCategory = activeCategory;
         if(this.activeProjectCategory === 'all') return this.filteredProjects = this.projects;
-        this.filteredProjects = this.projects.filter( project => project.category === category );
+        this.filteredProjects = this.projects.filter( project =>{
+         if(project.category.includes(category)) {
+           return project;
+         }
+        });
+        if(!this.filteredProjects.length) this.errorMessage = 'Проектов в данной категории не найдено.';
+        console.log(this.filteredProjects);
         return this.filteredProjects;
       },
 

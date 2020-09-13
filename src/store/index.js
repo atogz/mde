@@ -9,79 +9,23 @@ export default new Vuex.Store({
       {
         id: 1,
         name: 'Перинатальный центр',
-        category: 'construction',
+        category: ['construction'],
         description: '<p>Общая площадь: 27 600 м²<br/> Заказчик: ООО РТ "Соцстрой", 2017г.<br/>г. Ульяновск</p>',
         mainImage: require('../assets/img/projects/p_1-1.jpg'),
         images: [
           require('../assets/img/projects/p_1-2.jpg'),
+          require('../assets/img/projects/p_1-3.jpg'),
+          require('../assets/img/projects/p_1-4.jpg'),
+          require('../assets/img/projects/p_1-5.jpg'),
         ]
 
       },
       {
         id: 2,
-        name: 'Проект 2',
-        category: 'construction',
-      },
-      {
-        id: 3,
-        name: 'Проект 3',
-        category: 'construction',
-      },
-      {
-        id: 4,
-        name: 'Проект 4',
-        category: 'design',
-      },
-      {
-        id: 5,
-        name: 'Проект 5',
-        category: 'design',
-      },
-      {
-        id: 6,
-        name: 'Проект 6',
-        category: 'design',
-      },
-      {
-        id: 7,
-        name: 'Проект 7',
-        category: 'design',
-      },
-      {
-        id: 8,
-        name: 'Проект 8',
-        category: 'interiors',
-      },
-      {
-        id: 9,
-        name: 'Проект 9',
-        category: 'interiors',
-      },
-      {
-        id: 10,
-        name: 'Проект 10',
-        category: 'interiors',
-      },
-      {
-        id: 11,
-        name: 'Проект 11',
-        category: 'interiors',
-      },
-      {
-        id: 12,
-        name: 'Проект 12',
-        category: 'planning',
-      },
-      {
-        id: 13,
-        name: 'Проект 13',
-        category: 'planning',
-
-      },
-      {
-        id: 14,
-        name: 'Проект 14',
-        category: 'planning',
+        name: 'Апарт-отель',
+        category: ['construction', 'interiors', 'planning'],
+        description: '<p>Гостиничный комплекс<br/>Общая площадь: 27 000 м²<br/> Заказчик: ООО "Форвард Групп", 2010г.<br/>г. Казань</p>',
+        mainImage: require('../assets/img/projects/p_1-1.jpg'),
       },
     ],
   },
