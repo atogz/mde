@@ -25,7 +25,17 @@ export default new Vuex.Store({
         name: 'Апарт-отель',
         category: ['construction', 'interiors', 'planning'],
         description: '<p>Гостиничный комплекс<br/>Общая площадь: 27 000 м²<br/> Заказчик: ООО "Форвард Групп", 2010г.<br/>г. Казань</p>',
-        mainImage: require('../assets/img/projects/p_1-1.jpg'),
+        mainImage: require('../assets/img/projects/p_2-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_2-7.jpg'),
+          require('../assets/img/projects/p_2-8.jpg'),
+          require('../assets/img/projects/p_2-9.jpg'),
+          require('../assets/img/projects/p_2-3.jpg'),
+          require('../assets/img/projects/p_2-4.jpg'),
+          require('../assets/img/projects/p_2-5.jpg'),
+          require('../assets/img/projects/p_2-2.jpg'),
+          require('../assets/img/projects/p_2-6.jpg'),
+        ]
       },
     ],
   },
