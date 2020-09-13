@@ -4,11 +4,13 @@
             <transition-group name="fade">
                 <div class="w-full animated slider__item slider__item--1 flex items-center justify-center" v-if="activeSlide === 1" :key="1">
                         <div class="w-2/5 bg-opacity-75 bg-opacityColorBlack p-6 pb-8 text-accentColor text-center">
-                            <h3 class="text-4xl w-full font-bold">Проект 1</h3>
-                            <p class="mt-6 text-white ">Описание проекта 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
+                            <h3 class="text-4xl w-full font-bold">Перинатальный центр</h3>
+                            <p class="mt-6 text-white ">
+                                Общая площадь: 27 600 м²<br/>
+                                Заказчик: ООО РТ "Соцстрой", 2017г.<br/>
+                                г. Ульяновск
                             </p>
-                            <router-link :to="{ name: 'Project',  params: { id: 1, project: { 'id': 1, 'name': 'Проект 1', 'category': 'construction', 'imageLink': '/img/construction_1.82c23dce.jpg' } } }">
+                            <router-link :to="{ name: 'Project',  params: { id: 1 } }">
                                 <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
                             </router-link>
                         </div>
@@ -19,7 +21,7 @@
                         <p class="mt-6 text-white ">Описание проекта 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
                         </p>
-                        <router-link :to="{ name: 'Project',  params: { id: 2, project: { 'id': 2, 'name': 'Проект 2', 'category': 'construction', 'imageLink': '/img/construction_2.58c762cb.jpg' } } }">
+                        <router-link :to="{ name: 'Project',  params: { id: 2 } }">
                             <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
                         </router-link>
                     </div>
@@ -30,7 +32,7 @@
                         <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
                         </p>
-                        <router-link :to="{ name: 'Project',  params: { id: 3, project: { 'id': 3, 'name': 'Проект 3', 'category': 'construction', 'imageLink': '/img/construction_3.e4679518.jpg' } } }">
+                        <router-link :to="{ name: 'Project',  params: { id: 3 }}">
                             <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
                         </router-link>
                     </div>
@@ -41,7 +43,7 @@
                         <p class="mt-6 text-white ">Описание проекта 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Nullam ex mauris, imperdiet ac nisl quis, aliquam lacinia tortor.
                         </p>
-                        <router-link to="/projects/4">
+                        <router-link :to="{ name: 'Project',  params: { id: 4 }}">
                             <button class="mt-5 p-3 w-1/3 bg-white text-mainColor rounded-full font-bold">Подробнее</button>
                         </router-link>
 
@@ -119,7 +121,7 @@
 
 
     .slider__item--1 {
-        background-image: url("../assets/img/slider_1.jpeg");
+        background-image: url("../assets/img/projects/p_1-1.jpg");
         background-size: cover;
     }
     .slider__item--2 {

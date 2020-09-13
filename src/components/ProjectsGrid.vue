@@ -15,7 +15,7 @@
             <transition-group name="list-fade" class="grid gap-3 grid-cols-3">
                 <div class="flex border border-gray-300" v-for="project in filteredProjects.slice(0, amount)" :key="project.id" @mouseenter="showProjectData = project.id" @mouseleave="showProjectData = null">
                     <router-link :to="{ name: 'Project',  params: { id: project.id, project: project } }" class="relative flex">
-                    <img class="project-image cursor-pointer" :src="project.imageLink" :class="{'project-data--hovered': showProjectData === project.id}"/>
+                    <img class="project-image cursor-pointer" :src="project.mainImage" :class="{'project-data--hovered': showProjectData === project.id}"/>
                     <transition name="list-fast" mode="out-in">
                             <div class="project-data w-full absolute left-0" v-if="showProjectData === project.id">
                                 <div class="w-full text-center text-white uppercase font-bold">{{ project.name }}</div>
@@ -58,92 +58,7 @@
       return {
         loaded: false,
         activeProjectCategory: 'all',
-        projects: [
-          {
-            id: 1,
-            name: 'Проект 1',
-            category: 'construction',
-            imageLink: require('../assets/img/projects/construction_1.jpg')
-          },
-          {
-            id: 2,
-            name: 'Проект 2',
-            category: 'construction',
-            imageLink: require('../assets/img/projects/construction_2.jpg')
-          },
-          {
-            id: 3,
-            name: 'Проект 3',
-            category: 'construction',
-            imageLink: require('../assets/img/projects/construction_3.jpg')
-          },
-          {
-            id: 4,
-            name: 'Проект 4',
-            category: 'design',
-            imageLink: require('../assets/img/projects/design_1.jpg')
-          },
-          {
-            id: 5,
-            name: 'Проект 5',
-            category: 'design',
-            imageLink: require('../assets/img/projects/design_2.jpg')
-          },
-          {
-            id: 6,
-            name: 'Проект 6',
-            category: 'design',
-            imageLink: require('../assets/img/projects/design_3.jpg')
-          },
-          {
-            id: 7,
-            name: 'Проект 7',
-            category: 'design',
-            imageLink: require('../assets/img/projects/design_4.jpg')
-          },
-          {
-            id: 8,
-            name: 'Проект 8',
-            category: 'interiors',
-            imageLink: require('../assets/img/projects/interiors_1.jpg')
-          },
-          {
-            id: 9,
-            name: 'Проект 9',
-            category: 'interiors',
-            imageLink: require('../assets/img/projects/interiors_2.jpg')
-          },
-          {
-            id: 10,
-            name: 'Проект 10',
-            category: 'interiors',
-            imageLink: require('../assets/img/projects/interiors_3.jpg')
-          },
-          {
-            id: 11,
-            name: 'Проект 11',
-            category: 'interiors',
-            imageLink: require('../assets/img/projects/interiors_4.jpg')
-          },
-          {
-            id: 12,
-            name: 'Проект 12',
-            category: 'planning',
-            imageLink: require('../assets/img/projects/planning_1.jpg')
-          },
-          {
-            id: 13,
-            name: 'Проект 13',
-            category: 'planning',
-            imageLink: require('../assets/img/projects/planning_2.jpg')
-          },
-          {
-            id: 14,
-            name: 'Проект 14',
-            category: 'planning',
-            imageLink: require('../assets/img/projects/planning_3.jpg')
-          },
-        ],
+        projects: [],
         filteredProjects: [],
         showProjectData: null,
         showMoreProjectsButton: true
@@ -166,6 +81,7 @@
       }
     },
     mounted() {
+      this.projects = this.$store.getters.getProjects;
       this.filteredProjects = this.projects;
       this.loaded = true;
     }
