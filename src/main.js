@@ -11,6 +11,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 import { faHeadphonesAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import router from './router'
+import store from './store'
 
 
 library.add(faMapMarkerAlt)
@@ -28,5 +29,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')

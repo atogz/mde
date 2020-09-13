@@ -20,6 +20,10 @@
   }
 </script>
 
-<style scoped>
 
+<style scoped>
+    footer {
+        margin-top: auto;
+    }
 </style>
+
