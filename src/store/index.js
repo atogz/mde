@@ -104,6 +104,33 @@ export default new Vuex.Store({
           require('../assets/img/projects/p_6-11.jpg'),
         ]
       },
+      {
+        id: 7,
+        name: '"Южный"',
+        category: ['construction', 'interiors'],
+        description: '<p>Торгово-развлекательный комплекс<br/>Общая площадь: 56 700 м²<br/> Заказчик: ООО "Каэстройинвест", 2010г.</p>',
+        mainImage: require('../assets/img/projects/p_7-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_7-2.jpg'),
+          require('../assets/img/projects/p_7-3.jpg'),
+          require('../assets/img/projects/p_7-4.jpg'),
+          require('../assets/img/projects/p_7-5.jpg'),
+          require('../assets/img/projects/p_7-6.jpg'),
+          require('../assets/img/projects/p_7-7.jpg'),
+          require('../assets/img/projects/p_7-8.jpg'),
+          require('../assets/img/projects/p_7-9.jpg'),
+        ]
+      },
+      {
+        id: 8,
+        name: 'Театр русской драмы',
+        category: ['reconstruction'],
+        description: '<p>Общая площадь: 10 000 м²<br/> Заказчик: Министерство культуры, 2007г. <br/>Республика Карелия</p>',
+        mainImage: require('../assets/img/projects/p_8-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_8-2.jpg'),
+        ]
+      },
 
     ],
   },

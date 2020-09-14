@@ -25,6 +25,7 @@
     },
     mounted() {
         this.project = this.$store.getters.getProjectData(this.$route.params.id);
+        window.scrollTo(0,0);
     }
   }
 </script>
