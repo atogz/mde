@@ -131,6 +131,30 @@ export default new Vuex.Store({
           require('../assets/img/projects/p_8-2.jpg'),
         ]
       },
+      {
+        id: 9,
+        name: '"Валдай"',
+        category: ['reconstruction'],
+        description: '<p>Дом отдыха<br/>Общая площадь: 13 000 м²<br/> Заказчик: ООО "Кредо", 2009г.<br/> Пос. Рощино</p>',
+        mainImage: require('../assets/img/projects/p_9-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_9-2.jpg'),
+          require('../assets/img/projects/p_9-3.jpg'),
+        ]
+      },
+      {
+        id: 10,
+        name: '"Низами"',
+        category: ['planning'],
+        description: '<p>Концернтный комплекс<br/>Общая площадь: 9 490,7 м²<br/> Заказчик: ООО "Испа инжиниринг", 2006г.<br/> Баку</p>',
+        mainImage: require('../assets/img/projects/p_10-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_10-2.jpg'),
+          require('../assets/img/projects/p_10-4.jpg'),
+          require('../assets/img/projects/p_10-5.jpg'),
+          require('../assets/img/projects/p_10-6.jpg'),
+        ]
+      },
 
     ],
   },

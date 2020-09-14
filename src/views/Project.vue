@@ -7,7 +7,7 @@
         </div>
         <div class="w-full mt-3 grid grid-cols-3 gap-3">
             <div v-for="(img,index) in project.images" :key="index">
-                <img v-img:project.id :src="img">
+                <img class="project__gallery-image" v-img:project.id :src="img">
             </div>
 
         </div>
@@ -31,5 +31,4 @@
 </script>
 
 <style scoped>
-
 </style>
