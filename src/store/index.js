@@ -146,13 +146,38 @@ export default new Vuex.Store({
         id: 10,
         name: '"Низами"',
         category: ['planning'],
-        description: '<p>Концернтный комплекс<br/>Общая площадь: 9 490,7 м²<br/> Заказчик: ООО "Испа инжиниринг", 2006г.<br/> Баку</p>',
+        description: '<p>Концернтный комплекс<br/>Общая площадь: 9 490,7 м²<br/> Заказчик: ООО "Испа инжиниринг", 2006г.<br/>г. Баку</p>',
         mainImage: require('../assets/img/projects/p_10-1.jpg'),
         images: [
           require('../assets/img/projects/p_10-2.jpg'),
           require('../assets/img/projects/p_10-4.jpg'),
           require('../assets/img/projects/p_10-5.jpg'),
           require('../assets/img/projects/p_10-6.jpg'),
+        ]
+      },
+      {
+        id: 11,
+        name: '"Буран"',
+        category: ['planning', 'construction'],
+        description: '<p>Спортивно-оздоровительный комплекс<br/>Общая площадь: 12 000 м²<br/> Заказчик: Министерство путей и сообщения, 2010г.<br/>г. Москва</p>',
+        mainImage: require('../assets/img/projects/p_11-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_11-5.jpg'),
+          require('../assets/img/projects/p_11-3.jpg'),
+          require('../assets/img/projects/p_11-4.jpg'),
+          require('../assets/img/projects/p_11-2.jpg'),
+        ]
+      },
+      {
+        id: 12,
+        name: 'Офисный центр',
+        category: ['planning', 'construction'],
+        description: '<p>Общая площадь: 6 000 м²<br/> Заказчик: ЗАО "Связь Апарт", 2006г.<br/>г. Москва</p>',
+        mainImage: require('../assets/img/projects/p_12-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_12-2.jpg'),
+          require('../assets/img/projects/p_12-3.jpg'),
+          require('../assets/img/projects/p_12-4.jpg'),
         ]
       },
 

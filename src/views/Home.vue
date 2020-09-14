@@ -13,16 +13,14 @@
             </div>
             <div class="w-1/2">
                 <h3 class="text-3xl text-mainColor">Лидер на мировом рынке<span class="text-accentColor"> с 1995 года</span></h3>
-                <p class="mt-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur sit ullam perspiciatis, deserunt.Morbi vitae bibendum mi.
-                    Phasellus commodo est ut magna tristique, ut mattis felis eleifend.
-                    Nulla viverra quam eget risus rutrum, non bibendum turpis sagittis.</p>
+                <p class="mt-6">Общество с ограниченной ответственностью «МД Инжениринг» более десяти лет представлено на строительном рынке и имеет многолетний опыт работы в сфере строительства и проектирования.Общество с ограниченной ответственностью «МД Инжениринг» более десяти лет представлено на строительном рынке и имеет многолетний опыт работы в сфере строительства и проектирования.</p>
                 <p class="mt-3">
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Proin cursus sem at rhoncus convallis.
-                </p>
-                <p class="mt-3">
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Proin cursus sem at rhoncus convallis.
+                    Команда профессиональных строителей и высоквалифицированных специалистов из года в год успешно реализует проекты любой сложности. 000 «МД Инжениринг» гарантирует качество выполненных работ с учетом требований законодательной и нормативной документации посредством реализации следующих намерений: <br/>
+                    - управление качеством на всех стадиях жизненного цикла строительных процессов;<br/>
+                    - внедрения прогрессивных технологий в производстве;<br/>
+                    - формирований эффективных и взаимовыгодных отношений с заказчиками, с субподрядными организациями.<br/>
+                    - постоянного повышения квалификации сотрудников посредством обучения.
+
                 </p>
                 <div class="w-full flex items-center mt-12 xxl:w-2/3">
                     <router-link to="/about" class="p-3 w-1/3 bg-mainColor text-white no-underline text-center rounded-full font-bold">
