@@ -147,12 +147,12 @@
             </div>
             <div class="w-full mt-8 md:flex md:justify-between">
                 <div class="w-full border-2 border-gray-200  md:border-r-0 flex flex-wrap relative md:w-1/4">
-                    <div class="w-full text-6xl text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">01</div>
+                    <div class="w-full text-6xl mt-2 text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">01</div>
                     <div class="w-full flex pl-3 pr-3 flex-col md:flex-row">
-                        <div class="w-full mt-8 md:w-1/4">
+                        <div class="w-full mt-8 md:w-1/4 md:mt-12">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-1.png"/>
                         </div>
-                        <div class="w-full mt-8 font-bold md:w-3/4">
+                        <div class="w-full mt-8 font-bold md:w-3/4 md:mt-16">
                             <h3 class="text-mainColor">Инновационный подход</h3>
                             <p class="text-gray-500 font-normal mt-4 pb-6">Мы используем новейшие технологии и достижения при исполнении всех наших проектов.</p>
                         </div>
@@ -160,12 +160,12 @@
                 </div>
 
                 <div class="w-full border-2 mt-4 md:mt-0 md:border-r-0 border-gray-200 flex flex-wrap relative md:w-1/4">
-                    <div class="w-full text-6xl text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">02</div>
+                    <div class="w-full text-6xl text-gray-400 mt-2 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">02</div>
                     <div class="w-full flex pl-3 pr-3 flex-col md:flex-row">
-                        <div class="w-full mt-8 md:w-1/4">
+                        <div class="w-full mt-8 md:w-1/4 md:mt-12">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-2.png"/>
                         </div>
-                        <div class="w-full mt-8 font-bold md:w-3/4">
+                        <div class="w-full mt-8 font-bold md:w-3/4 md:mt-16">
                             <h3 class="text-mainColor">Грамотное проектирование</h3>
                             <p class="text-gray-500 font-normal mt-4 pb-6">Наши специалисты уделяют большое внимание этапу проектирования и имеют большую экспертизу.</p>
                         </div>
@@ -173,12 +173,12 @@
                 </div>
 
                 <div class="w-full border-2 border-gray-200 mt-4 md:mt-0 md:border-r-0 flex flex-wrap relative md:w-1/4">
-                    <div class="w-full text-6xl text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">03</div>
+                    <div class="w-full text-6xl text-gray-400 mt-2 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">03</div>
                     <div class="w-full flex pl-3 pr-3 flex-col md:flex-row">
-                        <div class="w-full mt-8 md:w-1/4">
+                        <div class="w-full mt-8 md:w-1/4 md:mt-12">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-3.png"/>
                         </div>
-                        <div class="w-full mt-8 font-bold md:w-3/4">
+                        <div class="w-full mt-8 font-bold md:w-3/4 md:mt-16">
                             <h3 class="text-mainColor">Квалифицированный персонал</h3>
                             <p class="text-gray-500 font-normal mt-4 pb-6">Мы используем только лучших специалистов при реализации всех наших проектов.</p>
                         </div>
@@ -186,12 +186,12 @@
                 </div>
 
                 <div class="w-full border-2 border-gray-200 mt-4 md:mt-0 md:border-r-0 flex flex-wrap relative md:w-1/4">
-                    <div class="w-full text-6xl text-gray-400 font-bold opacity-25 how-we-work__category-counter xxl:ml-8">04</div>
+                    <div class="w-full text-6xl text-gray-400 font-bold mt-2 opacity-25 how-we-work__category-counter xxl:ml-8">04</div>
                     <div class="w-full flex pl-3 pr-3 flex-col md:flex-row">
-                        <div class="w-full mt-8 md:w-1/4">
+                        <div class="w-full mt-8 md:w-1/4 md:mt-12">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-4.png"/>
                         </div>
-                        <div class="w-full mt-8 font-bold md:w-3/4">
+                        <div class="w-full mt-8 font-bold md:w-3/4 md:mt-16">
                             <h3 class="text-mainColor">Надежность и ответственность</h3>
                             <p class="text-gray-500 font-normal mt-4 pb-6">Для нас "срок сдачи" - не просто слова, мы уважаем время наших заказчиков!</p>
                         </div>
