@@ -29,9 +29,9 @@
         <div class="w-full md:w-2/5 flex order-1 flex-col md:order-2 md:pt-16">
             <div class="w-full md:w-4/5 flex bg-accentColor pl-6 pr-6 pt-12 pb-12 flex xxl:pr-32 xxl:pl-32">
                     <font-awesome-icon :icon="['fa', 'headphones-alt']" class="text-white opacity-50 ml-2 text-6xl"/>
-                <div class="flex flex-col ml-5 mt-2">
-                    <div class="text-white flex font-bold">Позвоните нам: <a href="tel:+74957488531" class="ml-2"> 8(495)748-8531</a></div>
-                    <p class="text-mainColor font-bold mt-1">Мы работаем с 9-00 до 18-00</p>
+                <div class="flex flex-col ml-12 mt-2 md:ml-5">
+                    <div class="text-white flex font-bold flex w-full flex-wrap md:flex-no-wrap"><span class="w-full md:w-1/2">Позвоните нам: </span><a href="tel:+74957488531" class="md:ml-2 w-full md:w-1/2"> 8(495)748-8531</a></div>
+                    <p class="text-mainColor font-bold mt-4 md:mt-1">Мы работаем с <span class="block md:inline md:mt-0">9-00 до 18-00</span></p>
                 </div>
 
             </div>

@@ -91,7 +91,7 @@
 
       showMoreProjects() {
         this.showMoreProjectsButton = false;
-        this.amount = this.amount + 3;
+        this.amount = this.amount + 6;
         setTimeout( () => {
           this.showMoreProjectsButton = true;
         }, 500)
