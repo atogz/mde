@@ -23,6 +23,9 @@
                     <div v-if="errors.length" class="mt-4 w-full">
                         <div class="text-red-600 text-center">Пожалуйста, исправьте ошибка в форме</div>
                     </div>
+                    <div v-if="responseMessage" class="mt-4 w-full">
+                        <div class="text-green-600 text-center">{{ responseMessage }}</div>
+                    </div>
                 </form>
                 <div class="w-full flex justify-center mt-6">
                     <button class="p-3 w-2/3 border-2 border-mainColor text-mainColor text-center rounded-full font-bold md:w-1/3" @click="sendForm()">Отправить</button>
@@ -57,6 +60,7 @@
 </template>
 
 <script>
+  import axios from 'axios'
   export default {
     name: "ContactForm",
     data() {
@@ -81,10 +85,26 @@
         if(!this.customerMessage.length) {
           this.errors.push('message');
         }
+        if(this.errors.length) return false;
+        return true;
       },
       sendForm() {
         if(this.validateForm()) {
-          console.log('sent');
+          this.loading = true;
+          return axios.post('/api/sendMail.php', {
+            customerName: this.customerName,
+            phoneNumber: this.customerPhoneNumber,
+            message: this.customerMessage
+          })
+            .then( (response) => {
+              this.responseMessage = response.data.message;
+              this.loading = false;
+            })
+            .catch( (error) => {
+              console.log(error);
+              this.responseMessage = error;
+              this.loading = false;
+            })
         }
       }
     }
