@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full mt-6 pl-6 pr-6">
+    <div class="w-full mt-6">
         <div class="w-full mt-12">
             <ProjectsGrid :amount="9"/>
         </div>
