@@ -10,7 +10,7 @@
                             <label class="text-gray-600" for="name">Ваше имя</label>
                             <input type="text" name="name" id="name" class="p-2" v-model="customerName" :class="{'has-error': errors.includes('name')}"/>
                         </div>
-                        <div class="flex flex-col w-1/2 ml-4">
+                        <div class="flex flex-col w-1/2 pl-4">
                             <label class="text-gray-600" for="phone">Ваш телефон</label>
                             <input type="tel" name="phone" id="phone" class="p-2" v-model="customerPhoneNumber" :class="{'has-error': errors.includes('phone')}"/>
                         </div>
