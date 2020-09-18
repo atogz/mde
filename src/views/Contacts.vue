@@ -6,7 +6,10 @@
 
 <script>
   export default {
-    name: "Contacts"
+    name: "Contacts",
+    mounted() {
+      window.scrollTo(0,0);
+    }
   }
 </script>
 

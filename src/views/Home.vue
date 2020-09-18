@@ -244,6 +244,9 @@ export default {
     Slider,
     ProjectsGrid,
     ContactForm
+  },
+  mounted() {
+    window.scrollTo(0,0);
   }
 }
 </script>
