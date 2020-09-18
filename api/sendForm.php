@@ -1,5 +1,6 @@
 <?php
 
+$data = array();
 $customerName = $_POST["customerName"];
 $phoneNumber = $_POST["phoneNumber"];
 $message = $_POST["message"];

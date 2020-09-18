@@ -26,6 +26,9 @@
                     <div v-if="responseMessage" class="mt-4 w-full">
                         <div class="text-green-600 text-center">{{ responseMessage }}</div>
                     </div>
+                    <div v-if="errorMessage" class="mt-4 w-full">
+                        <div class="text-red-600 text-center">{{ errorMessage }}</div>
+                    </div>
                 </form>
                 <div class="w-full flex justify-center mt-6">
                     <button class="p-3 w-2/3 border-2 border-mainColor text-mainColor text-center rounded-full font-bold md:w-1/3" @click="sendForm()">Отправить</button>
@@ -70,7 +73,8 @@
         customerMessage: "",
         errors: [],
         loading: false,
-        responseMessage: ""
+        responseMessage: "",
+        errorMessage: ""
       }
     },
     methods: {
@@ -102,7 +106,7 @@
             })
             .catch( (error) => {
               console.log(error);
-              this.responseMessage = error;
+              this.errorMessage = error;
               this.loading = false;
             })
         }
