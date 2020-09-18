@@ -180,7 +180,191 @@ export default new Vuex.Store({
           require('../assets/img/projects/p_12-4.jpg'),
         ]
       },
-
+      {
+        id: 13,
+        name: 'Бизнес-центр',
+        category: ['planning'],
+        description: '<p>Офисный центр <br/>Общая площадь: 2 500 м²<br/> Заказчик: ЗАО "МД Инжиниринг", 2011г.</p>',
+        mainImage: require('../assets/img/projects/p_13-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_13-2.jpg'),
+          require('../assets/img/projects/p_13-3.jpg'),
+        ]
+      },
+      {
+        id: 14,
+        name: '"Испа"',
+        category: ['planning'],
+        description: '<p>Офисно-складской комплекс <br/>Общая площадь: 45 000 м²<br/> Заказчик: ООО "Крафтконтиненталь", 2007г. <br/>Москвоская обл., пос. Марфино</p>',
+        mainImage: require('../assets/img/projects/p_14-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_14-2.jpg'),
+          require('../assets/img/projects/p_14-3.jpg'),
+        ]
+      },
+      {
+        id: 15,
+        name: '"Парк Хаус"',
+        category: ['planning'],
+        description: '<p>Торгово-развлекательный центр <br/>Общая площадь: 72 000 м²<br/> Заказчик: ООО "Бельта", 2009г. <br/>г. Астрахань</p>',
+        mainImage: require('../assets/img/projects/p_15-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_15-2.jpg'),
+          require('../assets/img/projects/p_15-3.jpg'),
+        ]
+      },
+      {
+        id: 16,
+        name: 'Спорткомплекс',
+        category: ['planning'],
+        description: '<p>Многофункциональный спортивно-развлекательный комплекс <br/>Общая площадь: 20 000 м²<br/> Заказчик: ГУП "Тверьоблстройзаказчик", 2007г. <br/>г. Тверь</p>',
+        mainImage: require('../assets/img/projects/p_16-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_16-2.jpg'),
+          require('../assets/img/projects/p_16-3.jpg'),
+        ]
+      },
+      {
+        id: 17,
+        name: 'Ледовый дворец',
+        category: ['planning'],
+        description: '<p>Общая площадь: 12 000 м²<br/> Заказчик: Министерство строительства, 2007г. <br/>Республика Карелия</p>',
+        mainImage: require('../assets/img/projects/p_17-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_17-2.jpg'),
+          require('../assets/img/projects/p_17-3.jpg'),
+        ]
+      },
+      {
+        id: 18,
+        name: 'Апартаменты на Гоголя',
+        category: ['interiors'],
+        description: '<p>Общая площадь: 890 м²<br/> Заказчик: ООО "ПСО Казань", 2011г.</p>',
+        mainImage: require('../assets/img/projects/p_18-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_18-2.jpg'),
+          require('../assets/img/projects/p_18-3.jpg'),
+          require('../assets/img/projects/p_18-4.jpg'),
+          require('../assets/img/projects/p_18-5.jpg'),
+          require('../assets/img/projects/p_18-6.jpg'),
+          require('../assets/img/projects/p_18-7.jpg'),
+          require('../assets/img/projects/p_18-8.jpg'),
+          require('../assets/img/projects/p_18-9.jpg'),
+          require('../assets/img/projects/p_18-10.jpg'),
+          require('../assets/img/projects/p_18-11.jpg'),
+          require('../assets/img/projects/p_18-14.jpg'),
+          require('../assets/img/projects/p_18-13.jpg'),
+          require('../assets/img/projects/p_18-12.jpg'),
+        ]
+      },
+      {
+        id: 19,
+        name: 'Интерьеры "Таиф"',
+        category: ['interiors'],
+        description: '<p>Пристрой к офисному зданию <br/>Общая площадь: 13 400 м²<br/> Заказчик: ОАО "Таиф", 2011г. <br/>г. Казань</p>',
+        mainImage: require('../assets/img/projects/p_19-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_19-2.jpg'),
+          require('../assets/img/projects/p_19-3.jpg'),
+          require('../assets/img/projects/p_19-4.jpg'),
+          require('../assets/img/projects/p_19-5.jpg'),
+          require('../assets/img/projects/p_19-6.jpg'),
+        ]
+      },
+      {
+        id: 20,
+        name: 'Интерьеры "Мираж"',
+        category: ['interiors'],
+        description: '<p>Гостиница <br/>Общая площадь: 17 000 м²<br/> Заказчик: ОАО "Таиф", 2003г. <br/>г. Казань</p>',
+        mainImage: require('../assets/img/projects/p_20-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_20-2.jpg'),
+          require('../assets/img/projects/p_20-3.jpg'),
+          require('../assets/img/projects/p_20-4.jpg'),
+          require('../assets/img/projects/p_20-5.jpg'),
+          require('../assets/img/projects/p_20-6.jpg'),
+        ]
+      },
+      {
+        id: 21,
+        name: '"Домодедово"',
+        category: ['interiors'],
+        description: '<p>Гостевой и основной дом <br/>Общая площадь: 2 000 м²<br/> Заказчик: "Резиденция", 2010г. <br/>г. Москва</p>',
+        mainImage: require('../assets/img/projects/p_21-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_21-2.jpg'),
+          require('../assets/img/projects/p_21-3.jpg'),
+          require('../assets/img/projects/p_21-4.jpg'),
+          require('../assets/img/projects/p_21-5.jpg'),
+          require('../assets/img/projects/p_21-6.jpg'),
+          require('../assets/img/projects/p_21-7.jpg'),
+          require('../assets/img/projects/p_21-8.jpg'),
+          require('../assets/img/projects/p_21-9.jpg'),
+          require('../assets/img/projects/p_21-10.jpg'),
+          require('../assets/img/projects/p_21-11.jpg'),
+          require('../assets/img/projects/p_21-12.jpg'),
+          require('../assets/img/projects/p_21-13.jpg'),
+        ]
+      },
+      {
+        id: 22,
+        name: '"Валдай"',
+        category: ['interiors'],
+        description: '<p>Дом отдыха <br/>Общая площадь: 13 000 м²<br/> Заказчик: ООО "Кредо", 2009г. <br/>пос. Рощино</p>',
+        mainImage: require('../assets/img/projects/p_22-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_22-2.jpg'),
+          require('../assets/img/projects/p_22-3.jpg'),
+          require('../assets/img/projects/p_22-4.jpg'),
+          require('../assets/img/projects/p_22-5.jpg'),
+          require('../assets/img/projects/p_22-6.jpg'),
+        ]
+      },
+      {
+        id: 23,
+        name: '"Низами"',
+        category: ['interiors'],
+        description: '<p>Концертный комплекс <br/>Общая площадь: 9 490,7 м²<br/> Заказчик: ЗАО "Испа инжиниринг", 2006г. <br/>г. Баку</p>',
+        mainImage: require('../assets/img/projects/p_23-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_23-2.jpg'),
+          require('../assets/img/projects/p_23-3.jpg'),
+          require('../assets/img/projects/p_23-4.jpg'),
+        ]
+      },
+      {
+        id: 24,
+        name: 'Театр русской драмы',
+        category: ['interiors'],
+        description: '<p>Общая площадь: 10 000 м²<br/> Заказчик: Министерство культуры, 2007г. <br/>Республика Карелия</p>',
+        mainImage: require('../assets/img/projects/p_24-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_24-2.jpg'),
+          require('../assets/img/projects/p_24-3.jpg'),
+          require('../assets/img/projects/p_24-4.jpg'),
+          require('../assets/img/projects/p_24-5.jpg'),
+          require('../assets/img/projects/p_24-6.jpg'),
+          require('../assets/img/projects/p_24-7.jpg'),
+          require('../assets/img/projects/p_24-8.jpg'),
+        ]
+      },
+      {
+        id: 25,
+        name: 'Отели Европы',
+        category: ['interiors'],
+        description: '<p>Сотрудничество с группой компаний Dike<br/> Заказчик: частный заказчик, 2010г. <br/>Милан, Флорения, Рим</p>',
+        mainImage: require('../assets/img/projects/p_25-1.jpg'),
+        images: [
+          require('../assets/img/projects/p_25-2.jpg'),
+          require('../assets/img/projects/p_25-3.jpg'),
+          require('../assets/img/projects/p_25-4.jpg'),
+          require('../assets/img/projects/p_25-5.jpg'),
+          require('../assets/img/projects/p_25-6.jpg'),
+          require('../assets/img/projects/p_25-7.jpg'),
+          require('../assets/img/projects/p_25-8.jpg'),
+          require('../assets/img/projects/p_25-9.jpg'),
+        ]
+      },
     ],
   },
   getters: {
