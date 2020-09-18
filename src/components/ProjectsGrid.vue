@@ -1,7 +1,7 @@
 <template>
     <div class="main pb-6">
         <transition name="slide-fade">
-            <div class="w-2/3 flex justify-between mx-auto xxl:w-2/4" v-if="loaded">
+            <div class="w-2/3 hidden justify-between mx-auto md:flex xxl:w-2/4" v-if="loaded">
                 <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'all'}" @click="filterProjects('all')">Все</div>
                 <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'construction'}" @click="filterProjects('construction', 'construction')">Строительство</div>
                 <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'reconstruction'}" @click="filterProjects('reconstruction', 'reconstruction')">Реконструкция</div>
@@ -9,6 +9,16 @@
                 <div class="category-button uppercase border border-gray-500 px-4 py-2 text-gray-500 cursor-pointer" :class="{'category-button--active': activeProjectCategory === 'planning'}" @click="filterProjects('planning', 'planning')">Проектирование</div>
             </div>
         </transition>
+        <div class="w-full flex justify-center">
+            <select class="block md:hidden h-12 color-mainColor w-3/5 p-2 border-2 border-accentColor" @change="filterProjects($event.target.value, $event.target.value)">
+                <option value="all" selected>Все</option>
+                <option value="construction">Строительство</option>
+                <option value="reconstruction">Реконструкция</option>
+                <option value="interiors">Интерьеры</option>
+                <option value="planning">Проектирование</option>
+            </select>
+        </div>
+
 
 
         <div class="w-full mt-8 pl-6 pr-6">
