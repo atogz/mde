@@ -4,7 +4,7 @@ $customerName = $_POST["name"];
 $phoneNumber = $_POST["phoneNumber"];
 $message = $_POST["message"];
 
-$to = 'webdevatogz@gmail.com';
+$to = 'md.engineering@mail.ru';
 $from = 'no-reply@mdengineering.ru';
 $subject = 'Сообщение с сайта mdengineering.ru';
 $headers = "From: " . $from . "\r\n";
