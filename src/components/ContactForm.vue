@@ -91,7 +91,7 @@
       sendForm() {
         if(this.validateForm()) {
           this.loading = true;
-          return axios.post('/api/sendMail.php', {
+          return axios.post('/api/sendForm.php', {
             customerName: this.customerName,
             phoneNumber: this.customerPhoneNumber,
             message: this.customerMessage
