@@ -8,17 +8,20 @@
                     <div class="w-full flex">
                         <div class="flex flex-col w-1/2">
                             <label class="text-gray-600" for="name">Ваше имя</label>
-                            <input type="text" name="name" id="name" class="p-2"/>
+                            <input type="text" name="name" id="name" class="p-2" v-model="customerName" :class="{'has-error': errors.includes('name')}"/>
                         </div>
                         <div class="flex flex-col w-1/2 ml-4">
                             <label class="text-gray-600" for="phone">Ваш телефон</label>
-                            <input type="tel" name="phone" id="phone" class="p-2"/>
+                            <input type="tel" name="phone" id="phone" class="p-2" v-model="customerPhoneNumber" :class="{'has-error': errors.includes('phone')}"/>
                         </div>
                     </div>
                     <div class="flex flex-col w-full mt-4">
                         <label class="text-gray-600" for="message">Ваше сообщение</label>
-                        <textarea name="message" id="message" cols="50" rows="5">
+                        <textarea name="message" id="message" cols="50" rows="5" v-model="customerMessage" :class="{'has-error': errors.includes('message')}">
                         </textarea>
+                    </div>
+                    <div v-if="errors.length" class="mt-4 w-full">
+                        <div class="text-red-600 text-center">Пожалуйста, исправьте ошибка в форме</div>
                     </div>
                 </form>
                 <div class="w-full flex justify-center mt-6">
@@ -58,17 +61,38 @@
     name: "ContactForm",
     data() {
       return {
-
+        customerName: "",
+        customerPhoneNumber: "",
+        customerMessage: "",
+        errors: [],
+        loading: false,
+        responseMessage: ""
       }
     },
     methods: {
+      validateForm() {
+        this.errors = [];
+        if(!this.customerName.length) {
+          this.errors.push('name');
+        }
+        if(!this.customerPhoneNumber.length) {
+          this.errors.push('phone');
+        }
+        if(!this.customerMessage.length) {
+          this.errors.push('message');
+        }
+      },
       sendForm() {
-        console.log('sent');
+        if(this.validateForm()) {
+          console.log('sent');
+        }
       }
     }
   }
 </script>
 
 <style scoped>
-
+    .has-error {
+        border: 2px solid red;
+    }
 </style>
