@@ -101,6 +101,7 @@
             message: this.customerMessage
           })
             .then( (response) => {
+              console.log(response);
               this.responseMessage = response.data.message;
               this.loading = false;
             })
