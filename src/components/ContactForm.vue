@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full flex">
-        <div class="w-3/5 bg-gray-200 pl-6 pr-6 pb-8 xxl:pl-32 xxl:pr-32">
+    <div class="w-full flex flex-wrap md:flex-no-wrap">
+        <div class="w-full bg-gray-200 pl-6 pr-6 pb-8 md:w-3/5 xxl:pl-32 xxl:pr-32">
             <div class="mt-6 text-mainColor w-full">
                 <h3 class="text-3xl font-bold">Получить консультацию</h3>
                 <p class="mt-4">Мы всегда внимательно относимся к пожеланиям заказчика и будем рады ответить на все Ваши вопросы</p>
@@ -26,8 +26,8 @@
                 </div>
             </div>
         </div>
-        <div class="w-2/5 flex flex-col pt-16">
-            <div class="w-4/5 flex bg-accentColor pl-6 pr-6 pt-12 pb-12 flex xxl:pr-32 xxl:pl-32">
+        <div class="w-full md:w-2/5 flex flex-col md:pt-16">
+            <div class="w-full md:w-4/5 flex bg-accentColor pl-6 pr-6 pt-12 pb-12 flex xxl:pr-32 xxl:pl-32">
                     <font-awesome-icon :icon="['fa', 'headphones-alt']" class="text-white opacity-50 ml-2 text-6xl"/>
                 <div class="flex flex-col ml-5 mt-2">
                     <div class="text-white flex font-bold">Позвоните нам: <a href="tel:+74957488531" class="ml-2"> 8(495)748-8531</a></div>
@@ -35,7 +35,7 @@
                 </div>
 
             </div>
-            <div class="w-full mt-2 bg-mainColor flex pl-6 pr-6 pt-12 pb-12 pl-10 pr-10 xxl:pl-32 xxl:pr-32">
+            <div class="w-full bg-mainColor flex pl-6 pr-6 pt-12 pb-12 pl-10 pr-10 md:mt-2 xxl:pl-32 xxl:pr-32">
                 <div class="w-1/2">
                     <div class="flex flex-col text-white">
                         <p class="text-4xl opacity-50">256</p>
