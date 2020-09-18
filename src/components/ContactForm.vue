@@ -22,7 +22,7 @@
                     </div>
                 </form>
                 <div class="w-full flex justify-center mt-6">
-                    <button class="p-3 w-1/3 border-2 border-mainColor text-mainColor text-center rounded-full font-bold" @click="sendForm()">Отправить</button>
+                    <button class="p-3 w-2/3 border-2 border-mainColor text-mainColor text-center rounded-full font-bold md:w-1/3" @click="sendForm()">Отправить</button>
                 </div>
             </div>
         </div>
