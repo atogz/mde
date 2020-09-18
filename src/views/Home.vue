@@ -23,10 +23,10 @@
 
                 </p>
                 <div class="w-full flex items-center mt-12 xxl:w-2/3">
-                    <router-link to="/about" class="p-3 w-1/3 bg-mainColor text-white no-underline text-center rounded-full font-bold">
+                    <router-link to="/about" class="p-3 w-full md:w-1/3 bg-mainColor text-white no-underline text-center rounded-full font-bold">
                         О Компании
                     </router-link>
-                    <router-link to="/projects" class="p-3 ml-2 w-1/3 bg-accentColor text-white no-underline text-center rounded-full font-bold">
+                    <router-link to="/projects" class="p-3 ml-2 w-full md:w-1/3 bg-accentColor text-white no-underline text-center rounded-full font-bold">
                         Проекты
                     </router-link>
                 </div>
@@ -152,7 +152,7 @@
                         <div class="w-full mt-8 md:w-1/4">
                             <img class="ml-4 mt-1" src="../assets/img/hww_icon-1.png"/>
                         </div>
-                        <div class="w-full font-bold md:w-3/4">
+                        <div class="w-full mt-8 font-bold md:w-3/4">
                             <h3 class="text-mainColor">Инновационный подход</h3>
                             <p class="text-gray-500 font-normal mt-4 pb-6">Мы используем новейшие технологии и достижения при исполнении всех наших проектов.</p>
                         </div>
