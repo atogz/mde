@@ -204,7 +204,7 @@
         <!-- Featured Project -->
         <div class="w-full bg-gray-200 flex flex-wrap md:flex-no-wrap">
             <div class="w-full md:w-3/5 flex justify-center">
-                <img src="../assets/img/home_featured.jpg">
+                <img class="featured-project__image" src="../assets/img/home_featured.jpg">
             </div>
             <div class="w-full p-8 md:p-0 md:w-2/5 flex flex-col items-center justify-center">
                 <h4 class="text-gray-600">Наш проект</h4>
@@ -273,6 +273,9 @@ export default {
     @media only screen and (max-width: 660px) {
         .welcome-image {
             max-height: 215px !important;
+        }
+        .featured-project__image {
+            max-height: 400px !important;
         }
     }
 </style>
