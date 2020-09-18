@@ -5,11 +5,11 @@
                 <span class="text-accentColor">MD Engineering </span>
                ©2020. Все права защищены.
            </div>
-            <div class="text-white flex justify-between">
-                <router-link to="/about" class="border-r pr-2 pl-2">О компании</router-link>
-                <router-link to="/about" class="border-r pr-2 pl-2">Пользовательское соглашение</router-link>
-                <router-link to="/about" class="pr-2 pl-2">Условия конфиденциальности</router-link>
-            </div>
+<!--            <div class="text-white flex justify-between">-->
+<!--                <router-link to="/about" class="border-r pr-2 pl-2">О компании</router-link>-->
+<!--                <router-link to="/about" class="border-r pr-2 pl-2">Пользовательское соглашение</router-link>-->
+<!--                <router-link to="/about" class="pr-2 pl-2">Условия конфиденциальности</router-link>-->
+<!--            </div>-->
         </div>
     </footer>
 </template>
