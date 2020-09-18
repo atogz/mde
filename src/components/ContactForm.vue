@@ -29,6 +29,9 @@
                     <div v-if="errorMessage" class="mt-4 w-full">
                         <div class="text-red-600 text-center">{{ errorMessage }}</div>
                     </div>
+                    <div v-if="loading" class="mt-4 w-full flex justify-center">
+                       <Loader/>
+                    </div>
                 </form>
                 <div class="w-full flex justify-center mt-6">
                     <button class="p-3 w-2/3 border-2 border-mainColor text-mainColor text-center rounded-full font-bold md:w-1/3" @click="sendForm()">Отправить</button>
@@ -64,8 +67,12 @@
 
 <script>
   import axios from 'axios'
+  import Loader from "./Loader";
   export default {
     name: "ContactForm",
+    components: {
+      Loader
+    },
     data() {
       return {
         customerName: "",
