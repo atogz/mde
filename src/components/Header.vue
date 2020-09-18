@@ -44,8 +44,8 @@
             </div>
       </div>
       <transition name="fadeHeight">
-          <div class="flex flex-col bg-mainColor opacity-75 pt-3 pb-3 text-white text-lg uppercase" v-if="showMobileMenu">
-              <router-link to="/" class="pl-6 pr-6 p-3">Главная</router-link>
+          <div class="flex flex-col bg-mainColor opacity-75 pt-3 pb-3 text-white text-lg uppercase" @click="showMobileMenu = false" v-if="showMobileMenu">
+              <router-link to="/" class="pl-6 pr-6 p-3" >Главная</router-link>
               <router-link to="/about" class="pl-6 pr-6 p-3">О компании</router-link>
               <router-link to="/projects" class="pl-6 pr-6 p-3">Проекты</router-link>
               <router-link to="/contacts" class="pl-6 pr-6 p-3">Контакты</router-link>
