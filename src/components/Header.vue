@@ -17,7 +17,7 @@
                   <div class="w-full flex lg:w-1/2">
                       <div class="w-full flex items-center mt-2 md:mt-0 lg:justify-end">
                           <span>Телефон для связи: </span>
-                          <span class="ml-2 text-xl">+7(916)3294122</span>
+                          <span class="ml-2 text-xl">8(495)748-8531</span>
                       </div>
                   </div>
 
