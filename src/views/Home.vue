@@ -221,7 +221,7 @@
         <!-- End Featured Project -->
 
         <!-- Projects Grid -->
-        <div class="w-1/2 m-auto text-center text-mainColor mt-12">
+        <div class="w-full pl-6 pr-6 m-auto text-center text-mainColor mt-12 md:w-1/2">
             <h3 class="text-3xl font-bold">Последние проекты</h3>
             <p class="mt-4">Рады представить наши проекты в самых различных областях</p>
         </div>
