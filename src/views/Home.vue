@@ -48,30 +48,30 @@
         <!-- End Welcome -->
 
         <!-- Partners -->
-        <div class="w-full pl-6 pr-6 pt-12 pb-12 flex flex-wrap bg-gray-200 flex xxl:pl-32 xxl:pr-32 xxl:pb-16 xxl:pt-16">
-            <div class="w-1/2 m-auto text-center text-mainColor">
-               <h3 class="text-3xl font-bold">Наши партнеры</h3>
-                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur sit ullam perspiciatis, deserunt.</p>
-            </div>
-            <div class="w-full pb-12 pt-12 pl-12 pr-12 flex justify-between items-center">
-                <router-link to="/partners">
-                    <img src="../assets/img/client_logo_1.png" />
-                </router-link>
-                <router-link to="/partners">
-                    <img src="../assets/img/client_logo_2.png" />
-                </router-link>
-                <router-link to="/partners">
-                    <img src="../assets/img/client_logo_3.png" />
-                </router-link>
-                <router-link to="/partners">
-                    <img src="../assets/img/client_logo_4.png" />
-                </router-link>
-                <router-link to="/partners">
-                    <img src="../assets/img/client_logo_5.png" />
-                </router-link>
-            </div>
-        </div>
-        <!-- End Clients -->
+<!--        <div class="w-full pl-6 pr-6 pt-12 pb-12 flex flex-wrap bg-gray-200 flex xxl:pl-32 xxl:pr-32 xxl:pb-16 xxl:pt-16">-->
+<!--            <div class="w-1/2 m-auto text-center text-mainColor">-->
+<!--               <h3 class="text-3xl font-bold">Наши партнеры</h3>-->
+<!--                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consectetur sit ullam perspiciatis, deserunt.</p>-->
+<!--            </div>-->
+<!--            <div class="w-full pb-12 pt-12 pl-12 pr-12 flex justify-between items-center">-->
+<!--                <router-link to="/partners">-->
+<!--                    <img src="../assets/img/client_logo_1.png" />-->
+<!--                </router-link>-->
+<!--                <router-link to="/partners">-->
+<!--                    <img src="../assets/img/client_logo_2.png" />-->
+<!--                </router-link>-->
+<!--                <router-link to="/partners">-->
+<!--                    <img src="../assets/img/client_logo_3.png" />-->
+<!--                </router-link>-->
+<!--                <router-link to="/partners">-->
+<!--                    <img src="../assets/img/client_logo_4.png" />-->
+<!--                </router-link>-->
+<!--                <router-link to="/partners">-->
+<!--                    <img src="../assets/img/client_logo_5.png" />-->
+<!--                </router-link>-->
+<!--            </div>-->
+<!--        </div>-->
+        <!-- End Partners -->
 
         <!-- Services -->
         <div class="home-services w-full pl-6 pr-6 pt-12 pb-16 flex flex-wrap bg-gray-200 flex xxl:pl-32 xxl:pr-32 xxl:pb-16 xxl:pt-16">
