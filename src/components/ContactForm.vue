@@ -1,6 +1,6 @@
 <template>
     <div class="w-full flex flex-wrap md:flex-no-wrap">
-        <div class="w-full bg-gray-200 pl-6 pr-6 pb-8 md:w-3/5 xxl:pl-32 xxl:pr-32">
+        <div class="w-full bg-gray-200 pl-6 pr-6 pb-8 order-2 md:order-1 md:w-3/5 xxl:pl-32 xxl:pr-32">
             <div class="mt-6 text-mainColor w-full">
                 <h3 class="text-3xl font-bold">Получить консультацию</h3>
                 <p class="mt-4">Мы всегда внимательно относимся к пожеланиям заказчика и будем рады ответить на все Ваши вопросы</p>
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full md:w-2/5 flex flex-col md:pt-16">
+        <div class="w-full md:w-2/5 flex order-1 flex-col md:order-2 md:pt-16">
             <div class="w-full md:w-4/5 flex bg-accentColor pl-6 pr-6 pt-12 pb-12 flex xxl:pr-32 xxl:pl-32">
                     <font-awesome-icon :icon="['fa', 'headphones-alt']" class="text-white opacity-50 ml-2 text-6xl"/>
                 <div class="flex flex-col ml-5 mt-2">
