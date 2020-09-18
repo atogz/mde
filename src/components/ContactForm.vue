@@ -111,6 +111,9 @@
               console.log(response);
               this.responseMessage = response.data.message;
               this.loading = false;
+              this.customerPhoneNumber = "";
+              this.customerMessage = "";
+              this.customerName = "";
             })
             .catch( (error) => {
               console.log(error);
