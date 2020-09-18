@@ -6,6 +6,12 @@ $customerName = $_POST["customerName"];
 $phoneNumber = $_POST["phoneNumber"];
 $message = $_POST["message"];
 
+$data["name"] = $customerName;
+$data["phone"] = $phoneNumber;
+$data["message"] = $message;
+
+return json_encode($data);
+
 $to = 'webdevatogz@gmail.com';
 $from = 'no-reply@mdengineering.ru';
 $subject = 'Сообщение с сайта mdengineering.ru';

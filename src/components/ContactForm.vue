@@ -95,11 +95,11 @@
       sendForm() {
         if(this.validateForm()) {
           this.loading = true;
-          return axios.post('/api/sendForm.php', {
-            customerName: this.customerName,
-            phoneNumber: this.customerPhoneNumber,
-            message: this.customerMessage
-          })
+          const data = new FormData();
+          data.append('name', this.customerName);
+          data.append('phoneNumber', this.customerPhoneNumber);
+          data.append('message', this.customerMessage);
+          return axios.post('/api/sendForm.php', data)
             .then( (response) => {
               console.log(response);
               this.responseMessage = response.data.message;
