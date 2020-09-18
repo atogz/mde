@@ -33,12 +33,12 @@
             </div>
             <div class="w-full mt-12 md:mt-0 md:w-1/2 md:pl-12">
                 <div class="w-full flex">
-                    <div class="w-3/5 mr-2">
-                        <img class="xxl:hidden" src="../assets/img/welcome_lg.jpg" />
+                    <div class="w-full md:w-3/5 mr-2">
+                        <img class="xxl:hidden welcome-image" src="../assets/img/welcome_lg.jpg" />
                         <img class="hidden xxl:block" src="../assets/img/welcome_lg_desktop.jpg">
                     </div>
-                    <div class="w-2/5 flex">
-                        <img class="pt-12 xxl:hidden" src="../assets/img/welcome_sm.jpg" />
+                    <div class="w-full md:w-2/5 flex">
+                        <img class="xxl:hidden welcome-image" src="../assets/img/welcome_sm.jpg" />
                         <img class="pt-12 hidden xxl:block" src="../assets/img/welcome_sm_desktop.jpg" />
                     </div>
                 </div>
@@ -268,5 +268,11 @@ export default {
         top: -10%;
         display: flex;
         justify-content: center;
+    }
+
+    @media only screen and (max-width: 660px) {
+        .welcome-image {
+            max-height: 215px !important;
+        }
     }
 </style>
