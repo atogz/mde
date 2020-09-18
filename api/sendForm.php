@@ -1,16 +1,8 @@
 <?php
 
-$data = [];
-
-$customerName = $_POST["customerName"];
+$customerName = $_POST["name"];
 $phoneNumber = $_POST["phoneNumber"];
 $message = $_POST["message"];
-
-$data["name"] = $customerName;
-$data["phone"] = $phoneNumber;
-$data["message"] = $message;
-
-return json_encode($data);
 
 $to = 'webdevatogz@gmail.com';
 $from = 'no-reply@mdengineering.ru';
@@ -43,5 +35,5 @@ else {
 }
 
 
-return json_encode($data);
+echo json_encode($data);
 
