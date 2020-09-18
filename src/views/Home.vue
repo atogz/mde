@@ -275,7 +275,7 @@ export default {
             max-height: 215px !important;
         }
         .featured-project__image {
-            max-height: 400px !important;
+            max-height: 370px !important;
         }
     }
 </style>
