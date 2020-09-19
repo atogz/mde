@@ -38,7 +38,7 @@
                         <img class="hidden xxl:block" src="../assets/img/welcome_lg_desktop.jpg">
                     </div>
                     <div class="w-full md:w-2/5 flex">
-                        <img class="xxl:hidden welcome-image" src="../assets/img/welcome_sm.jpg" />
+                        <img class="xxl:hidden welcome-image pt-0 md:pt-12" src="../assets/img/welcome_sm.jpg" />
                         <img class="pt-12 hidden xxl:block" src="../assets/img/welcome_sm_desktop.jpg" />
                     </div>
                 </div>
