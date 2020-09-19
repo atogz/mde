@@ -4,7 +4,7 @@
           <div class="container mx-auto">
               <div class="flex w-full flex-wrap">
                   <div class="w-full flex lg:w-1/2">
-                      <div class="w-1/2 flex items-center">
+                      <div class="w-2/3 flex items-center xxl:w-1/2">
                           <font-awesome-icon :icon="['fa', 'map-marker-alt']" class="text-mainColor" />
                           <span class="ml-2">Моска, Казань, Санкт-Петербург, Баку</span>
                       </div>
